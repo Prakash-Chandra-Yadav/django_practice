@@ -1,2 +1,10 @@
 <!--templates/home.html-->
 <h1>Company Homepage</h1>
+<p>The current date and time is: {% now "DATETIME_FORMAT" %}</p>
+<ul>
+    {% for items in inventory_list %}
+    <li>{{items}}</li>
+    {% endfor %}
+</ul>
+<p>{{greeting| title}}<p>
+{% comment %} Add more content here!! {% endcomment %}
