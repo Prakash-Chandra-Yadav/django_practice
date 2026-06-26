@@ -8,5 +8,5 @@ def home_page_view(request):
 
 
 def about_page_view(request):  # new
-    context = {"name": "prakash"}
+    context = {"name": "prakash", "age": 25}
     return render(request, "pages/about.html", context)
