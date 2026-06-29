@@ -39,6 +39,3 @@ class AboutpageTests(SimpleTestCase):
     def test_tempelate_content(self):
         response = self.client.get(reverse("about"))
         self.assertContains(response, "<h1>Company About Page</h1>")
-
-
-# Create your tests here.
