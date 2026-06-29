@@ -20,3 +20,9 @@ class AboutpageView(TemplateView):
     """initialize the attribute if the view"""
 
     template_name = "about.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["contact"] = "98-0000-0000-00"
+        context["address"] = "kathmandu"
+        return context
