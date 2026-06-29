@@ -1,2 +1,11 @@
 <h1>Portfoio homepage</h1>
 <h2> Hi this is my portfolio website</h2>
+<h3>Here are my skills</h3>
+<p> i have total {{ skills|length }}skills </p>
+<ul>
+{% for skill in skills %}
+<li>{{ skill }}</li>
+{% endfor %}
+</ul>
+<p>{{ greetings|title }}</p>
+{% comment %} you can add the more contents here {% endcomment %}
