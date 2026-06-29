@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views.generic import TemplateView
 
 
 # Create your views here.
@@ -12,3 +13,10 @@ def home_page_view(request):
         "gpa": "4.00",
     }
     return render(request, "home.html", context)
+
+
+# create the child class if the Tempelate view
+class AboutpageView(TemplateView):
+    """initialize the attribute if the view"""
+
+    template_name = "about.html"
