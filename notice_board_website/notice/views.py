@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView
+from .models import message
 
 
 # Create your views here.
@@ -11,3 +12,8 @@ class HomepageView(TemplateView):
         context["company_name"] = "ABC pvt.ltd"
         context["company_type"] = "finance"
         return context
+
+
+class NoticeView(ListView):
+    model = message
+    template_name = "notice.html"
