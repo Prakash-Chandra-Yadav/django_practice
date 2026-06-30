@@ -1,3 +1,5 @@
+{% extends 'base.html' %}
+{% block content %}
 <h1 color="blue">Instant Notice </h1>
 <p>This website broadcasts the notice for the employees of an organization</p>
 <h3>Here is the details of an organization</h3>
@@ -5,3 +7,4 @@
     <li>Company Name = {{ company_name|title }}</li>
     <li>Company Type = {{ company_type|title }}</li>
 </ul>
+{% endblock %}

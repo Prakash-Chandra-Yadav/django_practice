@@ -1,6 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
 <h1 color="green">Here you can see the notice of an organization</h1>
 <p>Note: all the notices below are created by the organization's authorized admin</p>
 <ul> {% for notice in message_list %}
     <li>{{ notice.text }} created time {{ notice.time }}</li>
     {% endfor %}
 </ul>
+{% endblock %}

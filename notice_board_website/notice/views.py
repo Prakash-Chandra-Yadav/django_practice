@@ -17,3 +17,7 @@ class HomepageView(TemplateView):
 class NoticeView(ListView):
     model = message
     template_name = "notice.html"
+
+
+class AboutView(TemplateView):
+    template_name = "about.html"
